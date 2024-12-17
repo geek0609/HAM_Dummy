@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally Legitimate Prize Claim</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .hidden {
+            display: none; /* This hides the text visually */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations! You've Won!</h1>
+        <p>You are the 1,000,000th visitor! Click below to claim your prize!</p>
+        <button onclick="alert('Just kidding... This is a prank!')">Claim Your Prize</button>
+
+        <div class="hidden" id="secretMessage">
+            <p style="color:red; font-size: 1.2em;">
+              You've found the secret message! This website is a prank. Don't take it seriously.
+            </p>
+            <p>
+                Extra tip for the curious: The real magic happens in the console (right click -> inspect -> console).
+            </p>
+        </div>
+
+        <noscript>
+          <p style="color:red;">
+            This page requires JavaScript to function correctly. Some features may not be available.
+          </p>
+        </noscript>
+    </div>
+    <script>
+        console.log("Hello there! This is a console message. Look here for extra info");
+        console.log("Another tip: Check out the elements tab for hidden content.");
+    </script>
+</body>
+</html>
